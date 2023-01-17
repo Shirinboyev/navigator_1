@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Uzbekistan 12 region')),
+      appBar: AppBar(title: Text('Uzbekistan 12 cities')),
       body: Center(
         child: Container(
           color: Colors.white,
@@ -52,7 +52,10 @@ class _HomePageState extends State<HomePage> {
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
-                          MaterialPageRoute(builder: ((context) => First())));
+                        MaterialPageRoute(
+                          builder: ((context) => First()),
+                        ),
+                      );
                     },
                     child: Center(
                         child: Text(
@@ -62,7 +65,10 @@ class _HomePageState extends State<HomePage> {
                 ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
-                          MaterialPageRoute(builder: ((context) => Second())));
+                        MaterialPageRoute(
+                          builder: ((context) => Second()),
+                        ),
+                      );
                     },
                     child: Center(
                         child: Text(
@@ -72,7 +78,10 @@ class _HomePageState extends State<HomePage> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: ((context) => Third())));
+                      MaterialPageRoute(
+                        builder: ((context) => Third()),
+                      ),
+                    );
                   },
                   child: Center(
                       child: Text(
@@ -83,7 +92,10 @@ class _HomePageState extends State<HomePage> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: ((context) => Fourth())));
+                      MaterialPageRoute(
+                        builder: ((context) => Fourth()),
+                      ),
+                    );
                   },
                   child: Center(
                       child: Text(
@@ -94,7 +106,10 @@ class _HomePageState extends State<HomePage> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: ((context) => Fifth())));
+                      MaterialPageRoute(
+                        builder: ((context) => Fifth()),
+                      ),
+                    );
                   },
                   child: Center(
                       child: Text(
@@ -105,7 +120,10 @@ class _HomePageState extends State<HomePage> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: ((context) => Sixth())));
+                      MaterialPageRoute(
+                        builder: ((context) => Sixth()),
+                      ),
+                    );
                   },
                   child: Center(
                       child: Text(
@@ -116,7 +134,10 @@ class _HomePageState extends State<HomePage> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: ((context) => Seventh())));
+                      MaterialPageRoute(
+                        builder: ((context) => Seventh()),
+                      ),
+                    );
                   },
                   child: Center(
                       child: Text(
@@ -127,7 +148,10 @@ class _HomePageState extends State<HomePage> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: ((context) => Eigtth())));
+                      MaterialPageRoute(
+                        builder: ((context) => Eigtth()),
+                      ),
+                    );
                   },
                   child: Center(
                       child: Text(
@@ -138,7 +162,10 @@ class _HomePageState extends State<HomePage> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: ((context) => Nineth())));
+                      MaterialPageRoute(
+                        builder: ((context) => Nineth()),
+                      ),
+                    );
                   },
                   child: Center(
                       child: Text(
@@ -149,7 +176,10 @@ class _HomePageState extends State<HomePage> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: ((context) => Tenth())));
+                      MaterialPageRoute(
+                        builder: ((context) => Tenth()),
+                      ),
+                    );
                   },
                   child: Center(
                       child: Text(
@@ -160,7 +190,10 @@ class _HomePageState extends State<HomePage> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: ((context) => Eleventh())));
+                      MaterialPageRoute(
+                        builder: ((context) => Eleventh()),
+                      ),
+                    );
                   },
                   child: Center(
                       child: Text(
@@ -171,13 +204,17 @@ class _HomePageState extends State<HomePage> {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: ((context) => Twelfth())));
+                      MaterialPageRoute(
+                        builder: ((context) => Twelfth()),
+                      ),
+                    );
                   },
                   child: Center(
-                      child: Text(
-                    'Farg\'ona',
-                    style: TextStyle(color: Colors.black),
-                  )),
+                    child: Text(
+                      'Farg\'ona',
+                      style: TextStyle(color: Colors.black),
+                    ),
+                  ),
                 ),
               ],
             ),

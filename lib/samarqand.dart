@@ -18,7 +18,7 @@ class _FirstState extends State<First> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: AppBar(
-            title: Text('Samarqand'),
+            title: Text('Samarqand city'),
           ),
           body: SingleChildScrollView(
             child: Column(
@@ -32,12 +32,14 @@ class _FirstState extends State<First> {
                     },
                     child: Icon(Icons.keyboard_double_arrow_left_rounded)),
                 Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 70, horizontal: 70),
+                  padding: const EdgeInsets.all(90),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.asset('images/sam.png'),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 100),
+                        child: Image.asset('images/sam.png'),
+                      ),
                       Image.asset('images/samarqand.png'),
                     ],
                   ),
