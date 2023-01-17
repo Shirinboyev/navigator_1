@@ -27,9 +27,18 @@ class _SeventhState extends State<Seventh> {
                         MaterialPageRoute(builder: ((context) => HomePage())));
                   },
                   child: Icon(Icons.keyboard_double_arrow_left)),
-              Image.asset(
-                'images/nature.png',
-                scale: 3,
+              Padding(
+                padding: const EdgeInsets.all(100),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 100),
+                      child: Image.asset('images/surxon.png'),
+                    ),
+                    Image.asset('images/surxonn.png')
+                  ],
+                ),
               ),
             ],
           )),

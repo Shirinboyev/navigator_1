@@ -43,182 +43,204 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(title: Text('Uzbekistan 12 cities')),
       body: Center(
-        child: Container(
-          color: Colors.white,
-          child: SingleChildScrollView(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: ((context) => First()),
-                        ),
-                      );
-                    },
-                    child: Center(
-                        child: Text(
-                      'Samarqand',
-                      style: TextStyle(color: Colors.black),
-                    ))),
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: ((context) => Second()),
-                        ),
-                      );
-                    },
-                    child: Center(
-                        child: Text(
-                      'Jizzax',
-                      style: TextStyle(color: Colors.black),
-                    ))),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: ((context) => Third()),
-                      ),
-                    );
-                  },
-                  child: Center(
-                      child: Text(
-                    'Buxoro',
-                    style: TextStyle(color: Colors.black),
-                  )),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: ((context) => Fourth()),
-                      ),
-                    );
-                  },
-                  child: Center(
-                      child: Text(
-                    'Andijon',
-                    style: TextStyle(color: Colors.black),
-                  )),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: ((context) => Fifth()),
-                      ),
-                    );
-                  },
-                  child: Center(
-                      child: Text(
-                    'Navoi',
-                    style: TextStyle(color: Colors.black),
-                  )),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: ((context) => Sixth()),
-                      ),
-                    );
-                  },
-                  child: Center(
-                      child: Text(
-                    'Qoraqalpog\'iston',
-                    style: TextStyle(color: Colors.black),
-                  )),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: ((context) => Seventh()),
-                      ),
-                    );
-                  },
-                  child: Center(
-                      child: Text(
-                    'Surxondaryo',
-                    style: TextStyle(color: Colors.black),
-                  )),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: ((context) => Eigtth()),
-                      ),
-                    );
-                  },
-                  child: Center(
-                      child: Text(
-                    'Xorazm',
-                    style: TextStyle(color: Colors.black),
-                  )),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: ((context) => Nineth()),
-                      ),
-                    );
-                  },
-                  child: Center(
-                      child: Text(
-                    'Toshkent',
-                    style: TextStyle(color: Colors.black),
-                  )),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: ((context) => Tenth()),
-                      ),
-                    );
-                  },
-                  child: Center(
-                      child: Text(
-                    'Nukus',
-                    style: TextStyle(color: Colors.black),
-                  )),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: ((context) => Eleventh()),
-                      ),
-                    );
-                  },
-                  child: Center(
-                      child: Text(
-                    'Namangan',
-                    style: TextStyle(color: Colors.black),
-                  )),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: ((context) => Twelfth()),
-                      ),
-                    );
-                  },
-                  child: Center(
-                    child: Text(
-                      'Farg\'ona',
-                      style: TextStyle(color: Colors.black),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            SizedBox(
+              width: 500,
+              height: 747,
+              child: Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(
+                      'images/nature.png',
                     ),
+                    fit: BoxFit.cover,
                   ),
                 ),
-              ],
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    SingleChildScrollView(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          ElevatedButton(
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: ((context) => First()),
+                                  ),
+                                );
+                              },
+                              child: Center(
+                                  child: Text(
+                                'Samarqand',
+                                style: TextStyle(color: Colors.black),
+                              ))),
+                          ElevatedButton(
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: ((context) => Second()),
+                                  ),
+                                );
+                              },
+                              child: Center(
+                                  child: Text(
+                                'Jizzax',
+                                style: TextStyle(color: Colors.black),
+                              ))),
+                          ElevatedButton(
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: ((context) => Third()),
+                                ),
+                              );
+                            },
+                            child: Center(
+                                child: Text(
+                              'Buxoro',
+                              style: TextStyle(color: Colors.black),
+                            )),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: ((context) => Fourth()),
+                                ),
+                              );
+                            },
+                            child: Center(
+                                child: Text(
+                              'Andijon',
+                              style: TextStyle(color: Colors.black),
+                            )),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: ((context) => Fifth()),
+                                ),
+                              );
+                            },
+                            child: Center(
+                                child: Text(
+                              'Navoi',
+                              style: TextStyle(color: Colors.black),
+                            )),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: ((context) => Sixth()),
+                                ),
+                              );
+                            },
+                            child: Center(
+                                child: Text(
+                              'Qoraqalpog\'iston',
+                              style: TextStyle(color: Colors.black),
+                            )),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: ((context) => Seventh()),
+                                ),
+                              );
+                            },
+                            child: Center(
+                                child: Text(
+                              'Surxondaryo',
+                              style: TextStyle(color: Colors.black),
+                            )),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: ((context) => Eigtth()),
+                                ),
+                              );
+                            },
+                            child: Center(
+                                child: Text(
+                              'Xorazm',
+                              style: TextStyle(color: Colors.black),
+                            )),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: ((context) => Nineth()),
+                                ),
+                              );
+                            },
+                            child: Center(
+                                child: Text(
+                              'Toshkent',
+                              style: TextStyle(color: Colors.black),
+                            )),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: ((context) => Tenth()),
+                                ),
+                              );
+                            },
+                            child: Center(
+                                child: Text(
+                              'Nukus',
+                              style: TextStyle(color: Colors.black),
+                            )),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: ((context) => Eleventh()),
+                                ),
+                              );
+                            },
+                            child: Center(
+                                child: Text(
+                              'Namangan',
+                              style: TextStyle(color: Colors.black),
+                            )),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: ((context) => Twelfth()),
+                                ),
+                              );
+                            },
+                            child: Center(
+                              child: Text(
+                                'Farg\'ona',
+                                style: TextStyle(color: Colors.black),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
-          ),
+          ],
         ),
       ),
     );
